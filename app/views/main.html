@@ -1,3 +1,8 @@
-<img class="img-responsive" width="100%" src="https://s3-us-west-2.amazonaws.com/zyring-public-image/logo.png" >
 <h3 style="text-align: center">This is the your main html file</h3>
 
+<h2>Where do you want to look for apartments?</h2>
+        <ul class="list-group-item-info">
+            <li ng-repeat="city in cities" class="row">
+                <img src="images/{{city.img}}" about="{{city.name}}" id="{{city.name}}" class="col-md-10"> <p class="h3">{{city.name}}</p>
+            </li>
+        </ul>
