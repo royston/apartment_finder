@@ -1,8 +1,11 @@
 <h3 style="text-align: center">This is the your main html file</h3>
 
 <h2>Where do you want to look for apartments?</h2>
-        <ul class="list-group-item-info">
-            <li ng-repeat="city in cities" class="row">
-                <img src="images/{{city.img}}" about="{{city.name}}" id="{{city.name}}" class="col-md-10"> <p class="h3">{{city.name}}</p>
-            </li>
-        </ul>
+
+<div masonry>
+    <div class="masonry-brick" ng-repeat="city in cities">
+        <a class="btn-link" href="#/apartment/{{city.name}}" >
+            <img  src="images/{{city.img}}" about="{{city.name}}" id="{{city.name}}">
+        </a>
+    </div>
+</div>

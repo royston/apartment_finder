@@ -13,7 +13,7 @@ angular
     'ngAnimate',
     'ngResource',
     'ngRoute',
-    'ngTouch'
+    'ngTouch', 'ngRoute'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -25,7 +25,12 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when ('/apartment/:cityName', {
+        templateUrl: 'views/apartment.html',
+        controller: 'ApartmentCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
+
   });

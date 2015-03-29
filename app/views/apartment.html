@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<span class="label label-success">
+    City Name : {{cityName}}</h2>
+</span>
+
+
+
+<div ng-repeat="cityInfo in cityData" class="container">
+    <div class="row">
+        <div class="col-md-2">{{cityInfo.title}}</div>
+        <div class="col-md-6"><img src="{{cityInfo.thumbnail}}" /></div>
+        <div class="col-md-2">{{cityInfo.price}}</div>
+    </div>
+</div>
+
+
+</body>
+</html>
